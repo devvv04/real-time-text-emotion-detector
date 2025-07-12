@@ -1,0 +1,16 @@
+import joblib
+
+# Load model and vectorizer
+model = joblib.load('emotion_model.pkl')
+vectorizer = joblib.load('tfidf_vectorizer.pkl')
+
+def predict_emotion(text):
+    text_vec = vectorizer.transform([text])
+    prediction = model.predict(text_vec)[0]
+    return prediction
+
+# Example
+if __name__ == "__main__":
+    text = input("Enter text: ")
+    emotion = predict_emotion(text)
+    print("Predicted Emotion:", emotion)
