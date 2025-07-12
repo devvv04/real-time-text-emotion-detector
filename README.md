@@ -15,6 +15,11 @@ A web application that identifies human emotions (like joy, sadness, anger, etc.
 
 ---
 
+<p align="left">
+  <img src="emotion_ss.JPG" width="800"/>
+</p>
+
+
 ## 🛠️ Technologies Used
 
 | Layer        | Tools / Technologies                            |
